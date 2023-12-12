@@ -12,7 +12,7 @@ router.post('/collection',async(req,res) => {
     try{
         const user = new collection(req.body);
         const createUser = await user.save();
-        res.status(201).send(createUser);
+        res.status(201).send(createUser)
     }catch(err){
         console.log(err)
     }
