@@ -19,7 +19,7 @@ const collectionSchema = new mongoose.Schema({
         required:true
     }
 })
-
+//create collection 
 const collection = new mongoose.model('COLLECTIONS',collectionSchema)
 
 module.exports = collection
